@@ -1,4 +1,3 @@
-
 import pandas as pd
 
 
@@ -53,5 +52,5 @@ data = pd.merge(
 
 cols = ["Time", "Spot_Price"] + [str(i) for i in range(1, 19)]
 data = data[cols]
-print(data.columns)
+data.to_csv('../data/cleaned_data.csv', index = False)
 
